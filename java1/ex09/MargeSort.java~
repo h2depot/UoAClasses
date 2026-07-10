@@ -1,0 +1,5 @@
+class MergeSort implements Strategy{
+    public void sort(int[] data){
+
+    }
+}

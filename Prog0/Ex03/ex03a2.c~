@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+
+{
+  int i = 12;
+  double x = 34.5;
+
+  printf("単位数は%  です\n", i);
+  printf("単位数は%  です\n", i);
+  printf("単位数は%  です\n", i);
+  printf("単位数は%  です\n", i);
+  printf("点数は%  点です\n", x);
+  printf("点数は%  点です\n", x);
+  printf("点数は%  点です\n", x);
+   
+}

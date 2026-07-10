@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+void to_hex(int);
+
+int main(){
+  int n;
+  
+  while (1){
+  printf("10進数を入力してください：");
+  scanf("%d", &n);
+  if(n < 0){
+    printf("負の値が入力されました\n");
+    continue;
+  }
+  to_hex(n);
+}
+  return 0;
+}
+
+void to_hex(int x){
+  int h[8];
+  int n, m;
+  int count = 0;
+  int i;
+
+  n = x;
+  while(n > 0){
+    m = n%16;
+    n /= 16;
+    h[count] = m;
+    count++;
+    printf("in while count = %d\n", count);
+  }
+
+  printf("%dの16進数は", x);
+
+  for(i=count-1; i>=0; i--){
+    switch(h[i]){
+
+    case 0:
+    case 1:    
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+      printf("%d",h[i]);
+      break;
+    case 10:
+      printf("a");
+      break;
+    case 11:
+      printf("b");
+      break;
+    case 12:
+      printf("c");
+      break;
+    case 13:
+      printf("d");
+      break;
+    case 14:
+      printf("e");
+      break;
+    case 15:
+      printf("f");
+      break;
+    }
+  }
+  printf("です\n");
+}
+  

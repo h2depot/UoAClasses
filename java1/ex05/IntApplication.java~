@@ -1,0 +1,14 @@
+class IntApplication{
+    public static void main(String[] args){
+	Int a = new Int(0);
+	Int b = new MInt(0);
+	MInt c = new MInt(0);
+
+	c.setValue(1);
+
+	System.out.println(a.getValue() + " (" a.INT_MAX + ") ");
+	System.out.println(b.getValue() + " (" b.INT_MAX + ") ");
+	System.out.println(c.getValue() + " (" c.INT_MAX + ") ");
+	System.out.println("MOD = " + c.MOD);
+    }
+}

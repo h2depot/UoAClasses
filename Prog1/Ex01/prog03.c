@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+char score2Grade(int);
+int grade2Point(char);
+
+int main(){
+  int num;
+  int scr;
+  int scan;
+  int i=0,sum=0;
+
+  while(1){
+
+    printf("Input score and credit (Ctrl+D to stop): ");
+    scan = scanf("%d%d", &scr,&num);
+
+    if(scan == EOF)
+      {
+        printf("Grade Point Average (GPA): %.3f,(Total credits: %d)\n", sum/(double)i,i);
+	break;
+      }
+
+    sum += grade2Point(score2Grade(scr))*num ;
+
+    i += num;
+
+    printf("Grade for %d is %c, Grade point (GP is %d). (%d credits)\n", scr,score2Grade(scr),grade2Point(score2Grade(scr)), num);
+  
+  }
+  
+  
+  
+  return 0;
+}
+
+char score2Grade(int score){
+
+  if(score >= 0 && score <= 34)return 'F';
+  else if(score >= 35 && score <= 49) return 'D';
+  else if(score >= 50 && score <= 64) return 'C';
+  else if(score >= 65 && score <= 79) return 'B';
+  else if(score >= 80 && score <= 100) return 'A';
+
+}
+
+int grade2Point(char grade){
+
+  if(grade == 'F') return 0;
+  else if(grade == 'D') return 0;
+  else if(grade == 'C') return 2;
+  else if(grade == 'B') return 3;
+  else if(grade == 'A') return 4;
+
+}

@@ -1,0 +1,18 @@
+class Circle extends Shape{
+    protected Point center;
+    protected int rad;
+
+    public Circle(Point p, int r){
+	center = p;
+	rad = r;
+    }
+
+    public void print(){
+	super.print();
+	System.out.println("(" + center.getX() + ", " + center.getY() + ") radius = " + rad);
+    }
+
+    public void move(int dx, int dy){
+	center.move(dx,dy);
+    }
+}

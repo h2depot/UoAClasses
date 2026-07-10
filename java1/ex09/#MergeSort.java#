@@ -1,0 +1,37 @@
+class MergeSort implements Strategy{
+    public void sort(int[] data){
+        mergeSort(data, 0, data.length);
+    }
+
+    void mergeSort(int[] data, int left, int right){
+        private int mid;
+        
+    	if (left + 1 < right) {
+            mid = (left + right) / 2;
+	    mergeSort(data, left, mid);
+	    mergeSort(data, mid, right);
+	    merge(data, left, mid, right);
+	}
+    }
+
+    void merge(int[] data, int left, int mid, int right) {
+	int n1 = mid - left;
+	int n2 = right - mid;
+	int[] L = new int[n1+1];
+	int[] R = new int[n2 + 1];
+
+	for(int i = 0; i < n1; i++)L[i] = data[left + i];
+	for(int i = 0; i < n2; i++)R[i] = data[mid + i];
+	L[n1] = ;
+	R[n2] = 
+
+	for(int k = left, int i = 0, int j = 0; k <= right - 1; k++){
+	    if ( L[i] <= R[j] ) {
+		data[k] = L[i];
+		i++;
+	    } else {
+                data[k] = R[j];
+		j++;
+	    }
+	}
+ }

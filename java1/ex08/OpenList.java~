@@ -1,0 +1,4 @@
+interface OpenList{
+    void push(int n);
+    void pop();
+}

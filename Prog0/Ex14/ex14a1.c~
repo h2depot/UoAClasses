@@ -1,0 +1,42 @@
+#include <stdio.h>
+#define MAX 12
+
+int bmi_hantei(double, double);
+int main(){
+  int scan,count=0,hantei;
+  double cm[MAX], kg[MAX], bmi[MAX];
+  printf("身長(cm)と体重(kg)を空白で区切って入力してください。\n入力可能な最大の人数は12人です。");
+
+  for (i=0; i <ARRAY; i++){
+    scan = scanf("%lf%lf", &cm[i], &kg[i]);
+    if (scan == EOF)break;
+    bmi[i] = kg[i]/(cm[i]*cm[i]);
+    count++;
+  }
+
+  printf("      BMI  肥満度分類\n");
+  
+  for(i=0; i < count; i++){
+    printf("%d人目 %.1f ", i+1, bmi[i]);
+    hantei = bmi_hantei(cm[i], kg[i]);
+    switch(hantei){
+    case -1: printf("低体重\n");
+      break;
+    case 0: printf("普通体重\n");
+      break;
+    case 1: printf("肥満(1度)\n");
+      break;
+    case 2: printf("肥満(2度)\n");
+      break;
+    case 3: printf("肥満(3度)\n");
+      break;
+    case 4: printf("肥満(4度)\n");
+      break;
+    }
+  }
+
+  int bmi_hantei(double x, double y){
+  
+  }
+  
+}

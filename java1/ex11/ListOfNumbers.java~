@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class ListOfNumbers{
+    private static final int SIZE = 10;
+    private int[] vector;
+
+    public ListOfNumbers(){
+        vector = new int[SIZE];
+	for ( int i = 0; i < SIZE; i++) vector[i] = i;
+    }
+
+    public void writeList() {
+        for ( int i = 0; i <= SIZE; i++) {
+            System.out.println("Value at: " + i + " = " + vector[i]);
+	}
+    }
+
+    public static void main(String[] args){
+        ListOfNumbers l = new ListOfNumbers();
+	l.writeList();
+    }
+}

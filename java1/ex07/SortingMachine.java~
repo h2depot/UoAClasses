@@ -1,0 +1,13 @@
+class SortingMachine{
+    void sort(Point[] p){
+      for (int i = 0; i < p.length; i++){
+        Point key = p[i];
+        int  j = i - 1;
+        while(j >= 0 && key.isSmallerThan(p[j])) {
+          p[j + 1] = p[j];
+          j--;
+        }
+        p[j + 1] = key;
+      }
+    }
+}

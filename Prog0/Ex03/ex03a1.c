@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+
+{
+  int i,j;
+  double x,y;
+
+  x = 1.2;
+  y = 3.5;
+  i = x;
+  j = y;
+
+  printf("i = %d\n", i);
+  printf("j = %d\n", j);
+
+  return 0;
+}

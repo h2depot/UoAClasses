@@ -1,0 +1,17 @@
+class Point2D{
+    private double x,y;
+
+    void add(Point2D vec){
+	x += vec.x;
+	y += vec.y;
+    }
+
+    void scale(int n){
+	x *= n;
+	y *= n;
+    }
+
+    double length() { return (x*x + y*y)**(1/2); }
+
+    double dotProduct(Point2D vec) { return x*vec.x + y*vec.y; }
+}

@@ -1,0 +1,20 @@
+class MovingPoint2D{
+    double vx, vy;
+    Point2D point;
+
+    public MovingPoint2D(double x, double y, double vx, double vy){
+	point.setX(x);
+	point.setY(y);
+	setVelocity(vx, vy);
+    }
+
+    void setVelocity(double a, double b) {
+	vx = a;
+	vy = b;
+    }
+
+    void move(){
+	point.x += vx;
+	point.y += vy;
+    }
+}

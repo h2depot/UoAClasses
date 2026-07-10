@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define STSIZE 100;
+
+void push(int);
+int pop(void);
+
+int stack[STSIZE];
+int head = 0;
+int tail = 0;
+
+int main(){
+  int data, status, i;
+
+  while(1){
+    printf("--- Input [+] to push, [-] to pop, [0] to detect --- >>");
+    status = scanf("%d", &data);
+    if (status != 1)break;
+
+    if (data == 0) printf("Data: %d\n", dequeue());
+    else enqueue(data);
+
+    printf(" [Stack] ");
+    for (i=head; i!=tail;i=(i+1)%QSIZE) printf("%d ", stack[i]);
+    printf("\n");
+  }
+}

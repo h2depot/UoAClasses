@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+  int i, j, m, max, min, array[8];
+
+  printf("8個の整数を空白で区切って入力してください。\n");
+
+  scanf("%d%d%d%d%d%d%d", &array[0], &array[1], &array[2], &array[3], &array[4], &array[5], &array[6], &array[7], &array[8]);
+
+  for (j = 0 ; j < 8 ; j++)
+    {
+      if (j == 0) max = array[j];
+      else
+	{
+          if (array [j] > max) max = array[j];
+	}
+    }
+  prinft("最大値は%dです。\n", max);
+
+  for (m = 0 ; m < 8 ; m++)
+    {
+      if (m == 0) min = array[m];
+      else
+	{
+          if (array [m] > min) min = array[m];
+	}
+    }
+  prinft("最大値は%dです。\n", min);
+
+  printf("入力された整数の表示\n")
+  for (i = 0 ; i < 8 ; i++) printf("%d ", array[i]);
+
+  printf("\n");
+
+  return 0;
+}

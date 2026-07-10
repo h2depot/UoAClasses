@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define NMAX 10000
+
+int main(){
+  int 
+
+  while(1){
+    if(scanf(""))
+  }
+    
+  return 0;
+}

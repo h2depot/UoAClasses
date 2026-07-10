@@ -1,0 +1,5 @@
+class AdvanceSortingMachine extends SortingMachine{
+    public AdvanceSortingMachine(Strategy strategy){
+	strategy.sort();
+    }
+}

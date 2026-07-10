@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void teaspoon(int);
+
+int main()
+{
+  int n;
+  
+  printf("紅茶の杯数を入力してください：");
+  scanf("%d", &n);
+  if (n == 0)
+    {
+      printf("またどうぞ");
+      exit(1);
+    }
+
+  teaspoon(n);
+  
+  return 0;
+}
+
+void teaspoon(n);
+{
+  int i;
+  for(i=1;i<n;i++)
+    {
+      printf("%dさじ、", i);
+    }
+  printf("%dさじ\nお湯を注ぐ…\nお茶をどうぞ！", i+1);
+
+}

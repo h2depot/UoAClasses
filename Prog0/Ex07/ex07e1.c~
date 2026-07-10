@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+  int i;
+  int score[240];
+  int hist[11];
+
+  srand((unsigned int)time(NULL));
+
+  for ( i = 0 ; i < 240 ; i++)
+    {
+      score[i] = rand() % (100 + 1);
+    }
+
+  for (i = 0; i < 240; i ++)
+    {
+      
+    }
+  
+
+  
+  return 0;
+  
+}

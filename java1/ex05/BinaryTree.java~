@@ -1,0 +1,5 @@
+class BinaryTree{
+    BinaryTree(){
+	System.out.println(this.getClass().getSimpleName());
+    }
+}

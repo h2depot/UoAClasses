@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+
+int isAlpha(char);
+
+
+int main(){
+  char n;
+
+  printf("Input a character:");
+
+  while(1){
+    scanf("%c",&n);
+    
+    if(n == '\n'){
+      break;      
+    }else{
+      printf("'%c': %3d in Decimal / 0x%x in Hexadecimal", n,n,n);
+      if(isAlpha(n)== TRUE)printf("It's an alphabetic character.\n");
+      else if (isAlpha(n) == FALSE)printf("It's a non-alphabetic character.\n");
+    }
+  }
+  
+  return 0;
+}
+
+int isAlpha(char c){
+  int judge;
+  int i;
+
+  i = c;
+
+  if(i >= 65 && i <= 90) judge = TRUE;
+  else if(i >= 97 && i <= 122) judge = TRUE;
+  else judge = FALSE;
+
+  return judge;
+}

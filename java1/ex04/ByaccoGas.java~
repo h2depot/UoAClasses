@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class ByaccoGas{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+
+	int num_lane = sc.nextInt();
+	int num_act = sc.nextInt();
+
+	for(int i = 0; i < num_act; i++){
+          
+	}
+    }
+}

@@ -1,0 +1,23 @@
+class Point{
+    private int x;
+    private int y;
+    public Point(int x, int y){
+	this.x = x;
+	this.y = y;
+    }
+
+    boolean equals(Point other){
+	if (this.x == other.x && this.y == other.y){
+	    return true;
+	}else return false;
+    }
+
+    int getX(){ return this.x; }
+    int getY(){ return this.y; }
+
+    void move(int dx, int dy){
+	x += dx;
+	y += dy;
+    }
+}
+

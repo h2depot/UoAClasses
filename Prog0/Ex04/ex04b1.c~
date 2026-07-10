@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+
+{
+  int ma,ph,en;
+  double ave;
+  
+  printf("数学と物理と英語の点数を入力してください\n");
+  scanf("%d%d%d", &ma, &ph, &en);
+
+  ave = (ma + ph + en)/3;
+  
+  printf("三教科の平均値は%6.2fです。\n", ave);
+
+  if(ave >= 80 && ave <= 100) printf("成績は優です。\n");
+  
+  else if(ave >= 60 && ave < 80) printf("成績は良です。\n");
+  
+  else if(ave >= 40 && ave < 60) printf("成績は可です。\n");
+  
+  else  printf("入力に誤りがある可能性があります。最初からやり直してください\n");
+
+  return 0;
+}

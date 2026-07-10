@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define ROW 6
+#define COL 10
+
+int main()
+{
+
+  int array[ROW][COL];
+  int n=0,data;
+  int i,j;
+
+  srand((unsigned int)time(NULL));
+  for (i=0;i<ROW;i++){
+    for (j=0;j<COL;j++){
+      array[i][j]=rand()%100;
+    }
+  }
+
+  printf("数値を入力してください：");
+  scanf("%d", &data);
+
+  for (i=0;i<ROW;i++){
+    for (j=0;j<COL;j++){
+      printf("%2d",array[i][j]);
+      if(data>=array[i][j]){
+	printf("**");
+	n++;
+      } else printf("  ");
+    }
+    printf("\n");
+  }
+  if(n>0)printf("%d以下の値は%d個ありました\n",data,n);
+  else if(n==0)printf("%d以下の値はありませんでした\n",data);
+  
+  return 0;
+}

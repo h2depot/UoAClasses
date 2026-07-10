@@ -1,0 +1,5 @@
+class RootedTree {
+    RootedTree(){
+	System.out.println(this.getClass().getSimpleName());
+    }
+}

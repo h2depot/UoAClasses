@@ -1,0 +1,8 @@
+C is an imperative, procedural language in the ALGOL tradition. It has a static type system. In C, all executable code is contained within subroutines (also called "functions", though not in the sense of functional programming). 
+"C (programming language)" from Wikipedia (https://en.wikipedia.org/wiki/C_(programming_language)). (Access date: 2024/10/03)
+
+c is an imperative, procedural language in the algol tradition. it has a static type system. in c, all executable code is contained within subroutines (also called "functions", though not in the sense of functional programming). 
+"c (programming language)" from wikipedia (https://en.wikipedia.org/wiki/c_(programming_language)). (access date: 2024/10/03)
+
+)30/01/4202 :etad sseccA( .))egaugnal_gnimmargorp(_C/ikiw/gro.aidepikiw.ne//:sptth( aidepikiW morf ")egaugnal gnimmargorp( C"
+ .)gnimmargorp lanoitcnuf fo esnes eht ni ton hguoht ,"snoitcnuf" dellac osla( senituorbus nihtiw deniatnoc si edoc elbatucexe lla ,C nI .metsys epyt citats a sah tI .noitidart LOGLA eht ni egaugnal larudecorp ,evitarepmi na si C

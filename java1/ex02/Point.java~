@@ -1,0 +1,19 @@
+class Point{
+    private int point_x,point_y;
+
+    void setX(int x){
+	point_x = x;
+    }
+
+    void setY(int y){
+	point_y = y;
+    }
+
+    int getX(){
+        return point_x;
+    }
+
+    int getY(){
+        return point_y;
+    }
+}

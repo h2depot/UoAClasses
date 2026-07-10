@@ -1,0 +1,8 @@
+class Stack{
+    int[] stack = new int[100];
+    int top = 0;
+
+    void pop{
+	System.out.println(stack[top]);
+    }
+}

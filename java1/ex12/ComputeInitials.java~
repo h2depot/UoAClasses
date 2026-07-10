@@ -1,0 +1,14 @@
+class ComputeInitials{
+    public static void main(String[] args){
+        String initial = new String[args.length];
+        int i = 0;
+	
+	for(String s: args){
+            if(s >= 65 && s <= 90){
+                initial[i++] = s;
+	    }
+	}
+
+	System.out.println(initial);
+    }
+}

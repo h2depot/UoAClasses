@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+  int turu, kame, tento;
+  int ashi;
+  int sum = 20;
+  int ashi_total;
+  int checker = 0;
+
+  printf("Input ashi (total): ");
+  scanf("%d", &ashi_total);
+
+  for ( turu = 0 ; turu <= sum ; turu++)
+    {
+      for ( kame = 0 ; kame <= sum - turu ; kame++)
+	{
+          tento = sum - turu - kame;
+	  ashi = turu*2 + kame*4 + tento*6;
+
+	  if (ashi == ashi_total)
+	    {
+	    printf("Turu:%d(%d)      Kame:%d(%d)      Tentoumushi:%d(%d)\n", turu, turu*2, kame, kame*4, tento, tento*6);
+	    checker = 1;
+	    }
+	}
+    }
+
+  if (checker == 0) printf("NOT found!\n");
+
+  return 0;
+}

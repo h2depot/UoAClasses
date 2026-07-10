@@ -1,0 +1,9 @@
+117	/Network/Servers/stdfsv2/vol/vol7/home2/s1320112/Prog0/Ex08
+52	/Network/Servers/stdfsv2/vol/vol7/home2/s1320112/Prog0/Ex04
+51	/Network/Servers/stdfsv2/vol/vol7/home2/s1320112/Prog0/Ex09
+48	/Network/Servers/stdfsv2/vol/vol7/home2/s1320112/Prog0/Ex07
+48	/Network/Servers/stdfsv2/vol/vol7/home2/s1320112/Prog0/Ex05
+
+この結果は以下のコマンドを実行して得た
+
+$ du -s ~/Prog0/* | sort -k 1,1 -nr | head -5 > ex10a1.txt

@@ -1,0 +1,29 @@
+initial
+begin
+// text segment
+Mem.cell['h00000000] = 32'h08000400;   // j 0x1000
+
+Mem.cell['h00001000] = 32'h8c085000;   // lw $8, 20480($0) [A]            ; 9: lw $8, A
+Mem.cell['h00001004] = 32'h8c095004;   // lw $9, 20484($0) [B]            ; 10: lw $9, B
+Mem.cell['h00001008] = 32'h8c0a5008;   // lw $10, 20488($0) [C]           ; 11: lw $10, C
+Mem.cell['h0000100c] = 32'h01095820;   // add $11, $8, $9                 ; 12: add $11, $8, $9
+Mem.cell['h00001010] = 32'h016a6022;   // sub $12, $11, $10               ; 13: sub $12, $11, $10
+Mem.cell['h00001014] = 32'h358d0003;   // ori $13, $12, 3                 ; 14: ori $13, $12, 3
+Mem.cell['h00001018] = 32'hac0d500c;   // sw $13, 20492($0) [S]           ; 15: sw $13, S
+Mem.cell['h0000101c] = 32'h08000407;   // j 0x0000101c [exit]             ; 17: j exit
+
+// data segment
+Mem.cell['h00005000] = 32'h0000001f;
+Mem.cell['h00005004] = 32'h00000035;
+Mem.cell['h00005008] = 32'h0000000b;
+Mem.cell['h0000500c] = 32'h00000000;
+
+ CK=1'b1;
+ CLR = 1'b1;
+ #110
+ CLR = 1'b0;
+ #900
+ $display("S = %d", Mem.cell['h0000500c']);
+ $finish;
+end
+always #50 CK=~CK;

@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+
+int isAlpha(char);
+int isUpper(char);
+
+
+int main(){
+  char n;
+
+  printf("Input a character:");
+
+  while(1){
+    scanf("%c",&n);
+    
+    if(n == '\n'){
+      break;      
+    }else{
+      printf("'%c': %3d in Decimal / 0x%x in Hexadecimal", n,n,n);
+      if(isAlpha(n) == TRUE)
+	{
+	  if(isUpper(n) == TRUE)printf("It's an upper-case character.\n");
+	  else if(isUpper(n) == FALSE)printf("It's a lower-case character.\n");
+	}
+      else if (isAlpha(n) == FALSE)printf("It's a non-alphabetic character.\n");
+    }
+  }
+  
+  return 0;
+}
+
+int isAlpha(char c){
+  int i;
+
+  i = c;
+
+  if(i >= 65 && i <= 90) return TRUE;
+  else if(i >= 97 && i <= 122) return TRUE;
+  else return  FALSE;
+
+}
+
+int isUpper(char c){
+  int i;
+
+  i = c;
+
+  if(i >= 65 && i <= 90) return TRUE;
+  else if(i >= 97 && i <= 122) return FALSE;
+  
+}

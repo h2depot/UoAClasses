@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main()
+{
+  int i, j, m, x, y, input[100], odd[100], even[100];
+
+  for ( i = 0 ; i < 100 ; i++ )
+    {
+      scanf("%d", &input[i]);
+
+      if ( input[i] == 0 ) break;
+    }
+
+  printf("Input: ");
+  for ( m = 0 ; m < 100 ; m++ )
+    {
+      printf("%d ", input[m]);
+    }
+  printf("\n");
+   
+  
+  for ( j = 0 ; j < 100 ; j++ ) 
+    {
+      if (input[j] != 0)
+	{
+          if ( input[j] % 2 == 0) even[j] = input[j];
+	  else odd[j] = input[j];
+	}
+
+  printf("Odd: ");
+  for ( x = 0 ; x < 100 ; x++ )
+    {
+      printf("%d ", odd[x]);
+    }
+  printf("\n");
+  
+  printf("Even: ");
+  for ( y = 0 ; y < 100 ; y++ )
+    {
+      printf("%d ", even[y]);
+    }
+  printf("\n");
+
+  return 0;
+
+}

@@ -1,0 +1,5 @@
+class OrderedTree extends {
+    OrderedTree(){
+	System.out.println(this.getClass().getSimpleName());
+    }
+}

@@ -1,0 +1,11 @@
+prog03main.c単体の動作テスト
+戻り値が 0 の場合（正常）: gcc -DTEST0 prog03main.c
+戻り値が -1 の場合（異常）: gcc -DTEST1 prog03main.c
+
+prog03main.c と prog03read.cを組み合わせた結合テスト/最終的な実行ファイルの動作確認
+複数コマンドで順次行う場合:
+gcc -c prog03main.c
+gcc -c prog03read.c
+gcc prog03read.o prog03main.o
+  
+一度に行う場合: gcc prog03main.c prog03read.c

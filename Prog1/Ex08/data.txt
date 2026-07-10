@@ -1,0 +1,5 @@
+1319991 Fukushima    3 Literacy B
+1319992 Wakamatsu   2 Programming A
+1319993 Kitakata    3 Math B
+1319994 Tajima    3 English C
+1319995 Iwaki 3 Japanese B

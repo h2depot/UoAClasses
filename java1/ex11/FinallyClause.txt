@@ -1,0 +1,5 @@
+1. The line "(2) Exception occurred" is printed because the condition "++count == 2" become true in the try block, which throw new Exception(). Consequently, program jumps to the catch block, and exception is called. Finally loop is executed every time, when try(and possibly catch) block finished. Therefore, "(2) in finally clause" printed during the second loop of the while.
+
+2. Finally block is called every time, when try block finishes. Even though the loop is about to break, the finally block is executed before the break takes effect, so the line is printed. 
+
+3. The line "System.out.println("Main program ends.");" is written outside the while loop. Once the while loop terminates, the program continues executing the next line, and that is why this program print "Main program ends."
