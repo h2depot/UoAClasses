@@ -1,68 +1,19 @@
 # Coursework Repository
 
-大学の授業で作成したプログラムやレポートを、科目ごとにまとめたリポジトリです。
-
-主に授業課題として作成したコードを収録しています。
-一部の科目については、MATLAB Live Script（`.mlx`）に加えて、閲覧しやすいPDF形式のレポートも配置しています。
+This repository contains programs and reports created for university coursework, organized by course. Most files are source code submitted for assignments. Some courses also include PDF versions of MATLAB Live Script (`.mlx`) reports for easier viewing.
 
 ## Contents
 
-### Prog0
-
-1年次に受講した、C言語の入門科目です。
-
-プログラミングそのものの基本から始まり、変数、条件分岐、繰り返し処理、配列、関数の定義や利用方法など、C言語による基礎的なプログラム作成について学びました。
-
-### Prog1
-
-`Prog0` に続いて受講した、C言語の発展的な科目です。
-
-ポインタ、構造体、動的メモリ確保、ファイル操作、プリプロセッサ、マクロ関数など、C言語特有の機能を中心に扱っています。
-
-### alg1
-
-基本的なアルゴリズムとデータ構造について学ぶ科目です。コードはＣ言語で書かれています。
-
-探索、整列、再帰処理、連結リスト、スタック、キュー、木構造などを扱っています。
-
-なお、本学では伝統的に難関科目として知られています。
-
-### java1
-
-Javaの基本文法と、オブジェクト指向プログラミングについて学ぶ科目です。
-
-クラス、継承、メソッドのオーバーライド、抽象クラス、インターフェースなど、Java特有のオブジェクト指向機能を重点的に扱っています。
-
-### ComputerArchitecture
-
-コンピュータアーキテクチャについて学ぶ科目です。
-
-授業では、本来Cadenceを用いてデータパスなどの回路を設計しましたが、このリポジトリには、授業内で使用したMIPSアセンブリのプログラムを収録しています。
-
-### CSExercise2
-
-MATLABの基本的な利用方法と、統計的機械学習の基礎について学ぶ科目です。
-
-ニューラルネットワークを使用しない古典的な機械学習手法を中心に、データの分析や可視化、モデルの作成と評価などを行っています。
-
-課題は主にMATLAB Live Script（`.mlx`）によるレポート形式で作成しています。
-内容を確認する場合は、同じディレクトリに配置しているPDF版のレポートも参照してください。
-
-### SignalProcessing
-
-MATLABを用いて、信号処理の基礎について学ぶ科目です。
-
-フィルタやマスク処理、周波数領域での解析、LFP（Local Field Potential）など、信号処理に関する概念を扱っています。
-
-こちらも課題は主にMATLAB Live Script（`.mlx`）によるレポート形式で作成しています。
-MATLABを使用せずに内容を確認する場合は、同じディレクトリに配置しているPDF版のレポートを参照してください。
+- **Prog0** — Introductory C programming, including variables, conditionals, loops, arrays, and functions.
+- **Prog1** — Advanced C programming, covering pointers, structures, dynamic memory allocation, file handling, preprocessors, and macros.
+- **alg1** — Fundamental algorithms and data structures in C, including searching, sorting, recursion, linked lists, stacks, queues, and trees.
+- **java1** — Java fundamentals and object-oriented programming, including classes, inheritance, method overriding, abstract classes, and interfaces.
+- **ComputerArchitecture** — MIPS assembly programs used in a computer architecture course. Circuit designs created with Cadence are not included.
+- **CSExercise2** — MATLAB assignments on data analysis, visualization, and classical statistical machine learning. Reports are available as both Live Scripts and PDFs.
+- **SignalProcessing** — MATLAB assignments on filters, masking, frequency-domain analysis, LFPs (Local Field Potentials), and other signal-processing topics. PDF versions of the reports are also included.
 
 ## Notes
 
-このリポジトリに含まれるコードやレポートは、受講当時に授業課題として作成したものです。
+These programs and reports reflect my knowledge and coding style at the time they were created, so some parts may differ from how I would approach them today. This repository contains my own work rather than assignment instructions or course materials.
 
-そのため、現在の知識やコーディングスタイルとは異なる部分や、より効率的に実装できる部分が含まれている場合があります。
-
-また、課題文や授業資料そのものではなく、自身が作成したプログラムおよびレポートを中心に公開しています。
-
-私がこれまで受講した授業は他にもありますが、Cadenceを用いた回路設計やNachOSの改修など、専用環境や授業資料への依存が大きい成果物については、現時点では掲載していません。
+Other coursework that depends heavily on specialized environments or restricted teaching materials, such as Cadence circuit designs and NachOS modifications, is not currently included.
